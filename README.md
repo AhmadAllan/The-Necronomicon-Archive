@@ -1,101 +1,97 @@
-# TheNecronomiconArchive
+# The Necronomicon Archive
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+Welcome, traveler.  
+**The Necronomicon Archive** is a digital grimoire of eldritch design, merging the arts of storytelling, craftsmanship, and arcane codices. This repository serves as a sanctuary for a **blog**, a **portfolio**, and a **landing page**, each imbued with a dark and mystical allure befitting its name.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+At its core lies a bespoke **UI library**, a collection of handcrafted components designed to empower the creation of unique, imaginative, and compelling user interfaces. Whether you're chronicling tales, showcasing your work, or forging creations both beautiful and enigmatic, this archive is your gateway to possibilities.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+Venture boldly into **The Necronomicon Archive**, where mortal reason falters, and creativity ascends to untold heights.
 
-## Run tasks
+---
 
-To run the dev server for your app, use:
+## Project Goals
 
-```sh
-npx nx serve The-Necronomicon-Archive
-```
+The primary objective of **The Necronomicon Archive** is to delve into advanced concepts in **Angular** while building a fully custom **Component Development Kit (CDK)** and UI library from scratch. Key goals include:
 
-To create a production bundle:
+1. **Frontend Development**: Explore the intricacies of Angular, focusing on custom styling and UI development without relying on frameworks like Bootstrap or Tailwind.
+2. **Backend Development**: Learn **NestJS** to handle backend logic while remaining within the TypeScript ecosystem.
+3. **Portfolio Creation**: Use the portfolio as an online CV to showcase personal achievements and projects.
+4. **Blog Integration**: Share insights, thoughts, and experiences related to software engineering and hobbies.
+5. **Technical Expertise**:
+- Master monorepo management using **Nx Workspace**.
+- Implement best practices in CI/CD and DevOps.
+- Stay updated with Angular and NestJS advancements, adapting the project to stable releases.
 
-```sh
-npx nx build The-Necronomicon-Archive
-```
+---
 
-To see all available targets to run for a project, run:
+## Desired Outcomes
 
-```sh
-npx nx show project The-Necronomicon-Archive
-```
+Upon project completion, the following outcomes are anticipated:
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+- A **monorepo** containing all project code, structured for scalability, efficiency, and maintainability.
+- A robust understanding of Angular and NestJS, applied through best practices.
+- A fully functional CI/CD pipeline leveraging modern DevOps techniques.
+- An evolving project that adapts to the latest Angular and NestJS features.
+- A portfolio and blog that reflect professional growth and creativity.
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Add new projects
+## Project Structure
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+This project is built on **Nx Workspace** to accommodate multiple interconnected applications and libraries.
 
-Use the plugin's generator to create new projects.
+### Applications
+- **Frontend**:
+  - **Blog**: Share thoughts on hobbies and the software engineering field.
+  - **Portfolio**: Showcase personal information and professional projects.
+  - **Showcase**: Display the UI library components in an interactive gallery.
 
-To generate a new application, use:
+- **Backend**:
+  - Handle data logic and connect to the database.
 
-```sh
-npx nx g @nx/angular:app demo
-```
+### Libraries
+- **UI Components**:
+  - A collection of modular, reusable components designed for a unique and cohesive user experience.
 
-To generate a new library, use:
+---
 
-```sh
-npx nx g @nx/angular:lib mylib
-```
+## Technology Stack
+- Frontend
+  - Angular 18
+  - SCSS/CSS
+- Backend
+  - NestJs
+- Database
+  - MongoDB
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+**All the project will be put in NX monorepo**
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Set up CI!
+## Milestones
 
-### Step 1
+| **Milestone**                  | **Description**                                                                  | **Status**        | **Target Completion** |
+|--------------------------------|----------------------------------------------------------------------------------|-------------------|-----------------------|
+| Project Initialization         | Set up the Nx Workspace, define folder structures, and configure basic tools.    | ✅ Completed      | Nov 2024              |
+| UI Library Core Components     | Develop foundational UI components (e.g., buttons, cards, forms).                | 🟡 In Progress    | Dev 2024              |
+| Blog Module Development        | Implement the blog application with routing, dynamic content, and CMS.           | ⬜ Not Started     | -                     |
+| Portfolio Module Development   | Build the portfolio application with personal details and project showcases.     | ⬜ Not Started     | -                     |
+| Backend Development            | Set up NestJS backend for data handling and API integration.                     | ⬜ Not Started     | -                     |
+| CI/CD Pipeline Implementation  | Integrate CI/CD workflows for automated testing and deployment.                  | ⬜ Not Started     | -                     |
+| Full Integration Testing       | Test all modules and ensure seamless communication between frontend and backend. | ⬜ Not Started     | -                     |
+| Launch                         | Deploy the project to production and gather feedback.                            | ⬜ Not Started     | -                     |
 
-To connect to Nx Cloud, run the following command:
+---
 
-```sh
-npx nx connect
-```
+## Roadmap
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
+1. Build core UI components and establish a design system.
+2. Develop frontend applications with individual features.
+3. Implement backend services for database communication.
+4. Integrate and test all components in a unified workflow.
+5. Establish and refine DevOps practices.
+6. Deploy and maintain the project with periodic updates.
 
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+This document serves as a guide and progress tracker for **The Necronomicon Archive**. Updates will be made regularly to reflect project advancements.
