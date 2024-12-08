@@ -16,6 +16,7 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
+qodana.yaml
 
 # IDE - VSCode
 .vscode

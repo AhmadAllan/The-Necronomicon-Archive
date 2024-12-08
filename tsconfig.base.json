@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@the-necronomicon-archive/UI": ["libs/UI/src/index.ts"],
+      "@the-necronomicon-archive/interfaces": ["libs/Interfaces/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
