@@ -1,0 +1,17 @@
+// Define color themes using maps
+$themes: (
+  light: (
+    text: #1a131b,
+    background: #eee7ee,
+    primary: #563f5a,
+    secondary: #b79a9c,
+    accent: #927468,
+  ),
+  dark: (
+    text: #ece5ed,
+    background: #171017,
+    primary: #bca5c0,
+    secondary: #66484a,
+    accent: #98796d,
+  ),
+);

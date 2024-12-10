@@ -22,5 +22,10 @@ export class AppComponent {
       name: 'Footer',
       route: 'showcase/footer',
     },
+    {
+      id: 'themes',
+      name: 'Themes',
+      route: 'themes',
+    },
   ];
 }

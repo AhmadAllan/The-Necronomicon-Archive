@@ -1,0 +1,17 @@
+<div class="theme">
+  <button class="theme__toggle" (click)="themeService.toggleTheme()" aria-label="Toggle theme">
+    @if (themeService.currentTheme() === 'dark') {
+      <span>☀️</span>
+    } @else {
+      <span>🌙</span>
+    }
+  </button>
+
+  <div class="theme__content">
+    <h2 class="theme__title">Current Theme</h2>
+    <p class="theme__description">
+      This is a simple demo of dynamic theming using Angular and SCSS. Switch the theme to see it in action!
+    </p>
+    <button class="theme__button">Example Button</button>
+  </div>
+</div>
