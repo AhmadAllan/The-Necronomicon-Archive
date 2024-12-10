@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@necronomicon/shared": ["libs/shared/src/assets/main.scss"],
+      "@necronomicon/ui": ["libs/UI/components/src/index.ts"],
+      "@necronomicon/interfaces": ["libs/Interfaces/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

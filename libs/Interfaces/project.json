@@ -1,0 +1,28 @@
+{
+  "name": "Interfaces",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/Interfaces/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/Interfaces",
+        "main": "libs/Interfaces/src/index.ts",
+        "tsConfig": "libs/Interfaces/tsconfig.lib.json",
+        "format": ["cjs"],
+        "assets": ["libs/Interfaces/*.md"],
+        "generatePackageJson": true
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/Interfaces/jest.config.ts"
+      }
+    }
+  }
+}

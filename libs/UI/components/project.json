@@ -1,0 +1,40 @@
+{
+  "name": "UI",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/UI/components/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/UI/components/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/UI/components/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/UI/components/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production",
+      "stylePreprocessorOptions": {
+        "includePaths": [ "libs/shared/src/assets/main.scss" ]
+      },
+      "extractCss": true
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/UI/components/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

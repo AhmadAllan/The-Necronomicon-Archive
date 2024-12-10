@@ -1,0 +1,8 @@
+<nav class="lib-nav d">
+  <h3 class="lib-nav-logo">Logo</h3>
+  <ul  role="list" class="lib-nav-tabs">
+    @for (tab of tabs; track tab.id) {
+      <li class="lib-nav-tabs-item">{{tab.name}}</li>
+    }
+  </ul>
+</nav>
