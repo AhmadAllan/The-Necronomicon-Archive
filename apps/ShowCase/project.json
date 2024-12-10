@@ -22,7 +22,13 @@
             "input": "apps/ShowCase/public"
           }
         ],
-        "styles": ["apps/ShowCase/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/shared/src/assets"]
+        },
+        "styles": [
+          "apps/blog/src/styles.scss",
+          "libs/shared/src/assets/main.scss"
+        ],
         "scripts": []
       },
       "configurations": {

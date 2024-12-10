@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {NavBarComponent} from "@the-necronomicon-archive/UI";
-import { ITabs } from '@the-necronomicon-archive/interfaces';
+import { ITabs } from '@necronomicon/interfaces';
+import {NavBarComponent} from "@necronomicon/ui";
 
 @Component({
   imports: [RouterModule, NavBarComponent],
@@ -21,6 +21,6 @@ export class AppComponent {
       id: 'footer',
       name: 'Footer',
       route: 'showcase/footer',
-    }
+    },
   ];
 }

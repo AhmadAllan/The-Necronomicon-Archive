@@ -22,7 +22,13 @@
             "input": "apps/blog/public"
           }
         ],
-        "styles": ["apps/blog/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/shared/styles/src/assets"]
+        },
+        "styles": [
+          "apps/blog/src/styles.scss",
+          "libs/shared/styles/src/assets/main.scss"
+        ],
         "scripts": []
       },
       "configurations": {
